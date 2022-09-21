@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>반복문 연습문제 1번</h1>
+    <script>
+        var input = 1;
+        var cnt = 0; // 사용자가 입력한 숫자의 개수
+        var sum = 0; // 사용자가 입력한 숫자의 합
+        while( input > 0 ){
+            input = Number(prompt("숫자를 입력하시오.(0을 입력하면 종료)"));
+            sum += input;
+            cnt++;
+            console.log(input, sum, cnt);
+        }
+    </script>
+</body>
+</html>
