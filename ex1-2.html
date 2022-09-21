@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI 지수 계산기</h1>
+    <script>
+        var height = prompt("키를 입력하시요.");
+        var weight = prompt("몸무게를 입력하시오.");
+        var h1 = Number(height);
+        var w1 = Number(weight);
+        
+        console.log("체중 " + w1 + "Kg인 사람의 키가" + h1 + "cm라면 " + (w1 / (h1/100 * h1/100)) + "가 된다.");
+    </script>
+</body>
+</html>
