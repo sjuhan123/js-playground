@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GuGudan 1</h1>
+    <script>
+        var i = Number(prompt("구구단 몇 단을 계산하고 싶은지 정수로 입력하시오."));
+        var multiple = 1;
+        var ans = 0;
+        while( multiple < 10 ){
+            ans = multiple * i;
+            console.log(i + " 곱하기 " + multiple + "은(는) " + ans + "이다.");
+            document.write(i + " 곱하기 " + multiple + "은(는) " + ans + "이다." + "<br>");
+            multiple++;
+        }
+    </script>
+</body>
+</html>
