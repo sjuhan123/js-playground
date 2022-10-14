@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 구구단 출력 프로그램 </h1>
+    출력할 단: <input type="text" id="num">
+    <button onclick="display()">확인</button>
+    <script>
+        function display() {
+            var nber = document.getElementById('num').value;
+            var n = Number(nber)
+            if( n < 2 || n > 9) {
+                document.write("2이상, 9이하의 값만 입력할 수 있습니다.");
+            } else {
+                document.write("<h2>" + n + "단 </h2>");
+                var i = 1;
+                while( i < 10 ) {
+                    document.write(nber + "*" + i + "=" + nber*i + "이다." + "<br>");
+                    i++;
+                }
+            }
+         }
+    </script>
+</body>
+</html>
