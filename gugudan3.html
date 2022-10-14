@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 구구단 출력 프로그램 </h1>
+    <script>
+        /*
+        var strN = Number(prompt("구구단에서 몇 단을 출력하고 싶으신가요?"));
+        if( strN <= 9 && strN >= 2){
+            for( i = 1; i <= 9; i++){
+                console.log(strN + "*" + i + "=" + strN * i);
+                document.write(strN + "*" + i + "=" + strN * i + "<br>");   
+            }
+        } else { 
+            alert("2이상, 9이하의 값만 입력할 수 있습니다.");
+        }
+        // 내가 만든 프로그램
+        */ 
+
+        /*
+        강의 참고 후 만든 프로그램
+        */
+
+        var strN = prompt("구구단 몇 단을 출력하고 싶으신가요?");
+        var n = Number(strN);
+        if( n < 2 || n > 9) {
+            var input = strN;
+            document.write("2이상 9이하의 숫자를 입력해 주세요." + "<br>" + input);
+        } else {
+            for( i = 1; i <= 9; i++){
+                document.write(strN + "*" + i + "=" + strN * i + "<br>");   
+            }
+        }
+
+    </script>
+</body>
+</html>
