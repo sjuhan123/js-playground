@@ -30,13 +30,12 @@
         var n = Number(strN);
         if( n < 2 || n > 9) {
             var input = strN;
-            document.write("2이상 9이하의 숫자를 입력해 주세요." + "<br>" + input);
+            alert("2이상 9이하의 숫자를 입력해 주세요.");
         } else {
             for( i = 1; i <= 9; i++){
                 document.write(strN + "*" + i + "=" + strN * i + "<br>");   
             }
         }
-
     </script>
 </body>
 </html>
